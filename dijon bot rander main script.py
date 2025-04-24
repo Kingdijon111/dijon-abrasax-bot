@@ -38,7 +38,7 @@ async def grant(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Usage: /grant user_id days")
 
 async def ban(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_user.username != "your_admin_username":
+    if update.effective_user.username != "@Kingdijon999":
         return
     try:
         user_id = context.args[0]
@@ -50,7 +50,7 @@ async def ban(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Usage: /ban user_id")
 
 async def broadcast(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_user.username != "your_admin_username":
+    if update.effective_user.username != "@Kingdijon999":
         return
     msg = " ".join(context.args)
     count = 0
